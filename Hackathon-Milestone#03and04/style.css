@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #212176;
+    color: #321b71;
     margin: 0;
     padding: 0;
 }
@@ -11,13 +11,13 @@ body {
     max-width: 800px;
     margin: 2rem auto;
     padding: 1rem 2rem;
-    background: #ffffff;
+    background: #efefef;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    color: #2a9d8f;
+    color: #212176;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 0.5rem;
@@ -39,8 +39,8 @@ p {
 }
 
 h2 {
-    color: #264653;
-    border-bottom: 2px solid #2a9d8f;
+    color: #212176;
+    border-bottom: 2px solid #212176;
     padding-bottom: 0.5rem;
     margin-top: 1.5rem;
     font-size: 1.5rem;
@@ -59,7 +59,7 @@ li {
 button {
     margin-top: 0.5rem;
     padding: 0.3rem 0.5rem;
-    background-color: #2a9d8f;
+    background-color: #212176;
     color: white;
     border: none;
     border-radius: 4px;
@@ -68,7 +68,7 @@ button {
 }
 
 button:hover {
-    background-color: #21867a;
+    background-color: #000000;
 }
 
 label {
