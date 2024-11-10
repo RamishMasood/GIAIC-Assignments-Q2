@@ -19,7 +19,7 @@ var ToggleDiv = /** @class */ (function () {
         var _this = this;
         Array.from(element.children).forEach(function (child) {
             if (!_this.excludeTags.includes(child.tagName)) {
-                child.style.display === "none"a
+                child.style.display === "none"
                     ? (child.style.display = "block")
                     : (child.style.display = "none");
             }
