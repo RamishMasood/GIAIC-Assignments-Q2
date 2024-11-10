@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form-container">
+        <h1>Resume Builder</h1>
+        <form id="resume-form">
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="picture">Upload Picture:</label>
+            <input type="file" id="picture" name="picture" accept="image/*" required>
+
+            <h2>Education</h2>
+            <div id="education-container">
+                <label for="education">Education:</label>
+                <textarea id="education" name="education" required></textarea>
+            </div>
+            <button type="button" onclick="addMore('education-container')">Add More Education</button>
+
+            <h2>Work Experience</h2>
+            <div id="work-experience-container">
+                <label for="work-experience">Work Experience:</label>
+                <textarea id="work-experience" name="work-experience" required></textarea>
+            </div>
+            <button type="button" onclick="addMore('work-experience-container')">Add More Work Experience</button>
+
+            <h2>Skills</h2>
+            <div id="skills-container">
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="skills" required></textarea>
+            </div>
+            <button type="button" onclick="addMore('skills-container')">Add More Skills</button>
+
+            <h2>Courses</h2>
+            <div id="courses-container">
+                <label for="courses">Courses:</label>
+                <textarea id="courses" name="courses" required></textarea>
+            </div>
+            <button type="button" onclick="addMore('courses-container')">Add More Courses</button>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </div>
+
+    <div id="resume-container" style="display: none;">
+        <h1 id="resume-name"></h1>
+        <img id="resume-picture" alt="Profile Picture" class="profile-picture">
+        <p id="resume-email"></p>
+        <p id="resume-phone"></p>
+
+        <section id="resume-education">
+            <h2>Education</h2>
+            <button onclick="toggleSection('education-details')">Hide</button>
+            <p id="education-details" class="content"></p>
+        </section>
+
+        <section id="resume-work-experience">
+            <h2>Work Experience</h2>
+            <button onclick="toggleSection('work-experience-details')">Hide</button>
+            <p id="work-experience-details" class="content"></p>
+        </section>
+
+        <section id="resume-skills">
+            <h2>Skills</h2>
+            <button onclick="toggleSection('skills-details')">Hide</button>
+            <p id="skills-details" class="content"></p>
+        </section>
+
+        <section id="resume-courses">
+            <h2>Courses</h2>
+            <button onclick="toggleSection('courses-details')">Hide</button>
+            <p id="courses-details" class="content"></p>
+        </section>
+
+        <button onclick="editResume()">Edit Resume</button>
+        <button onclick="downloadPDF()">Download PDF</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
