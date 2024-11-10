@@ -23,10 +23,11 @@ h4{
 .Left-side a{
   text-align: center;
 }
+
 .Left-side img {
   width: 55%;
   border-radius: 100%;
-  border: .5rem solid rgb(96, 96, 96);
+  border: .5rem solid rgb(255, 255, 255);
 }
 .Left-side ul {
   list-style: none;
@@ -70,6 +71,7 @@ hr{
   display: flex;
   flex-direction: column;
   padding-top: 10%;
+  background-color: rgb(210, 210, 210);
   
 }
 .right-side h1,p{

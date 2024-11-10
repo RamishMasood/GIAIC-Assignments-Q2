@@ -31,30 +31,7 @@ export default function Experience() {
           <li>Inventory tracking, sales reporting and customer management.</li>
         </ul>
       </div>
-      <div >
-        <h4>Student Management System</h4>
-        <ul>
-          <li>.NET-based student data management.</li>
-          <li>Attendance tracking, grading and course management.</li>
-        </ul>
-      </div>
-    </div>
-    <div>
-      <h2>Professional Projects</h2>
-      <div>
-        <h4>Jokes Website using ASP.NET CRUD Operations</h4>
-        <ul>
-          <li>ASP.NET Core web application for joke management.</li>
-          <li>CRUD operations for user-generated content.</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Student Management System using Web API CRUD Operations</h4>
-        <ul>
-          <li>Web API with Entity Framework for student data management.</li>
-          <li>CRUD operations for efficient data handling.</li>
-        </ul>
-      </div>
+
     </div>
     </div>
   </div>

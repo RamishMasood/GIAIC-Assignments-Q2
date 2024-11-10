@@ -5,7 +5,7 @@ export default function Nav() {
         <>
             <div className="Left-side">
                 
-                <Link href="/"><img  src="/adil.jpg" alt="not found"/></Link>
+                <Link href="/"><img  src="/Ramish.jpg" alt="not found"/></Link>
                 <ul>
                     <li><Link href="/SidePages/About">About</Link></li><hr/>
                     <li><Link href="/SidePages/Experience">Experience</Link></li><hr/>

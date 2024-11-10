@@ -20,19 +20,16 @@ export default function Experience() {
       <div>
         <h3>Web Development</h3>
         <ul>
-          <li>ASP.NET Core</li>
           <li>HTML/CSS</li>
-          <li>JavaScript (Client-side)</li>
+          <li>JavaScript </li>
           <li>Next.js</li>
-          <li>Web APIs</li>
         </ul>
       </div>
 
 
       <div>
-        <h3>Databases</h3>
+        <h3>Database</h3>
         <ul>
-          <li>SQL Server</li>
           <li>MySQL</li>
         </ul>
        
