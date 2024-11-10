@@ -1,6 +1,3 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
 export default function Experience() {
   return (
     <div className="right-side">
@@ -8,11 +5,11 @@ export default function Experience() {
     <div>
       <h2>Technical Interests</h2>
       <ul>
-        <li>Artificial Intelligence</li>
-        <li>Machine Learning</li>
-        <li>Web Development</li>
-        <li>Cybersecurity</li>
-        <li>Cloud Computing</li>
+        <li>UI/UX Design (Figma, Adobe XD)</li>
+        <li>WordPress & Elementor Development</li>
+        <li>Mobile App Prototyping</li>
+        <li>Web Development (HTML, CSS, JavaScript)</li>
+        <li>Java, Unity3D</li>
       </ul>
     </div>
     </div>
