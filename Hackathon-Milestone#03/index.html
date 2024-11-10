@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume Builder</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Resume Builder</h1>
+            <form id="resume-form">
+                <!-- Personal Information -->
+                <div class="section">
+                    <h2>Personal Information</h2>
+                    <div class="fields">
+                        <div class="field">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="field">
+                            <label for="phone">Phone:</label>
+                            <input type="text" id="phone" name="phone">
+                        </div>
+                        <div class="field">
+                            <label for="linkedin">LinkedIn:</label>
+                            <input type="text" id="linkedin" name="linkedin">
+                        </div>
+                        <div class="field">
+                            <label for="github">Github:</label>
+                            <input type="text" id="github" name="github">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="section">
+                    <h2>Education</h2>
+                    <div class="fields">
+                        <div class="field">
+                            <label for="degree">Degree:</label>
+                            <input type="text" id="degree" name="degree">
+                        </div>
+                        <div class="field">
+                            <label for="university">University:</label>
+                            <input type="text" id="university" name="university">
+                        </div>
+                        <div class="field">
+                            <label for="graduation-date">Graduation Date:</label>
+                            <input type="date" id="graduation-date" name="graduation-date">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Experience -->
+                <div class="section">
+                    <h2>Work Experience</h2>
+                    <div class="fields">
+                        <div class="field">
+                            <label for="company">Company:</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="field">
+                            <label for="position">Position:</label>
+                            <input type="text" id="position" name="position">
+                        </div>
+                        <div class="field">
+                            <label for="duration">Duration:</label>
+                            <input type="text" id="duration" name="duration">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="section">
+                    <h2>Skills</h2>
+                    <div class="fields">
+                        <div class="field">
+                            <label for="skill-1">Skill 1:</label>
+                            <input type="text" id="skill-1" name="skill-1">
+                        </div>
+                        <div class="field">
+                            <label for="skill-2">Skill 2:</label>
+                            <input type="text" id="skill-2" name="skill-2">
+                        </div>
+                        <div class="field">
+                            <label for="skill-3">Skill 3:</label>
+                            <input type="text" id="skill-3" name="skill-3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Objective -->
+                <div class="section">
+                    <h2>Objective</h2>
+                    <div class="fields">
+                        <textarea id="objective" name="objective"></textarea>
+                    </div>
+                </div>
+
+                <!-- Projects & Experience -->
+                <div class="section">
+                    <h2>Projects & Experience</h2>
+                    <div class="fields">
+                        <div class="field">
+                            <label for="project-1">Project 1:</label>
+                            <input type="text" id="project-1" name="project-1">
+                        </div>
+                        <div class="field">
+                            <label for="project-2">Project 2:</label>
+                            <input type="text" id="project-2" name="project-2">
+                        </div>
+                        <div class="field">
+                            <label for="project-3">Project 3:</label>
+                            <input type="text" id="project-3" name="project-3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="section">
+                    <h2>Technical Skills</h2>
+                    <div class="fields">
+                        <div class="field">
+                            <label for="technical-skill-1">Technical Skill 1:</label>
+                            <input type="text" id="technical-skill-1" name="technical-skill-1">
+                        </div>
+                        <div class="field">
+                            <label for="technical-skill-2">Technical Skill 2:</label>
+                            <input type="text" id="technical-skill-2" name="technical-skill-2">
+                        </div>
+                        <div class="field">
+                            <label for="technical-skill-3">Technical Skill 3:</label>
+                            <input type="text" id="technical-skill-3" name="technical-skill-3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Environment -->
+                <div class="section">
+                    <h2>Environment</h2>
+                    <div class="fields">
+                        <div class="field">
+                            <label for="environment-1">Environment 1:</label>
+                            <input type="text" id="environment-1" name="environment-1">
+                        </div>
+                        <div class="field">
+                            <label for="environment-2">Environment 2:</label>
+                            <input type="text" id="environment-2" name="environment-2">
+                        </div>
+                        <div class="field">
+                            <label for="environment-3">Environment 3:</label>
+                            <input type="text" id="environment-3" name="environment-3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification -->
+                <div class="section">
+                    <h2>Certification</h2>
+                    <div class="fields">
+                        <textarea id="certification" name="certification"></textarea>
+                    </div>
+                </div>
+
+                <button id="generate-resume">Generate Resume</button>
+            </form>
+        </div>
+
+        <div class="resume-container">
+            <div class="Left-side">
+
+                <div class="Image-tag" >
+                    <img src="src/Ramish Masood.jpg" alt="Ramish Masood">
+                </div>
+                <div class="Personal-Info">
+                  <h2>Personal Information</h2>
+                  <hr>
+                  <p><b>Name:</b> <span id="name"></span></p>
+                  <p><b>Email:</b> <span id="email"></span></p>
+                  <p><b>Phone:</b> <span id="phone"></span></p>
+                  <p><b>LinkedIn:</b> <span id="linkedin"></span></p>
+                  <p><b>Github:</b> <span id="github"></span></p>
+              </div>
+              <div class="Education">
+                  <h2>Education</h2>
+                  <hr>
+                  <p><b>Degree:</b> <span id="degree"></span></p>
+                  <p><b>University:</b> <span id="university"></span></p>
+                  <p><b>Graduation Date:</b> <span id="graduation-date"></span></p>
+              </div>
+              <div class="certification">
+                  <h2>Certification</h2>
+                  <hr>
+                  <p><b>Certification:</b> <span id="certification"></span></p>
+              </div>
+          </div>
+          <div class="Right-side">
+              <h1 style="text-align: left;   height: 20px;"></h1>
+              <h4 style="text-align: left;  height: 1px"></h4>
+              <div class="objective">
+                  <h2>Objective</h2>
+                  <hr>
+                  <p><span id="objective"></span></p>
+              </div>
+              <div class="project">
+                  <h2>Projects & Experience</h2>
+                  <hr>
+                  <ul id="project-list"></ul>
+              </div>
+              <div class="technical-skills">
+                  <h2>Technical Skills</h2>
+                  <hr>
+                  <ul id="technical-skills-list"></ul>
+              </div>
+              <div class="environment">
+                  <h2>Environment</h2>
+                  <hr>
+                  <ul id="environment-list"></ul>
+              </div>
+          </div>
+      </div>
+
+      <script src="script.js"></script>
+  </div>
+</body>
+
+</html>
