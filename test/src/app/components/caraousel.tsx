@@ -3,9 +3,9 @@ import women from "@/images/shop-hero-1-product-slide-1 (1).jpg"
 
 export default function Carausel(){
     return(
-        <div className="w-[1439px] h-[716px] absolute top-[136px] left-[1px] border">
-          <div className="w-[1440px] h-[716px]">
-                 <Image src={women} alt="women"/>
+        <div className="w-full h-[716px] absolute top-[136px] left-[1px] border">
+          <div className="w-full h-[716px]">
+                 <Image className ="w-full" src={women} alt="women"/>
           </div>
          
       {/* Content Overlay */}

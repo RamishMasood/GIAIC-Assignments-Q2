@@ -21,8 +21,8 @@ export default function Navbar() {
       </div>
 
       {/* Desktop Menu */}
-      <div className="w-[1155px] h-[58px] absolute left-[265px] hidden lg:block">
-        <div className="w-[361px] h-[25px] absolute top-[20.5px] flex gap-[15px]">
+      <div className="w-full h-[58px] absolute left-[265px] hidden lg:block">
+        <div className="w-full h-[25px] absolute top-[20.5px] flex gap-[15px]">
           <ul className="font-Montserrat font-semibold text-[14px] text-[#737373] gap-[15px] leading-[24px] flex justify-center">
             <li><Link href="/">Home</Link></li>
             <li><Link href="/shop">Shop</Link></li>
@@ -45,7 +45,7 @@ export default function Navbar() {
           </div>
 
           {/* Icons section */}
-          <ul className="flex gap-[15px] items-center">
+          <ul className="w-full flex gap-[15px] items-center">
             <li>
               <Image src={search} alt="search" width={16} height={16} />
             </li>

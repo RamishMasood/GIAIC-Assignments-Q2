@@ -3,9 +3,9 @@ import greenman from "@/images/shop-hero-2-png-picture-1.png";
 
 export default function GreenDiv(){
     return(
-        <div className="w-[1440px] rounded-[5px] absolute bg-[#23856D] mt-[-130px] top-[3200px] border">
-            <div className="w-[1440px] h-[709px]">
-             <div className="w-[1440px] h-[709px]">
+        <div className="w-full rounded-[5px] absolute bg-[#23856D] mt-[-130px] top-[3200px] border">
+            <div className="w-full h-[709px]">
+             <div className="w-full h-[709px]">
                 <div className="w-[1036px] h-[711px] absolute left-[209px] py-[112px] flex  gap-[80px]">
                     <div className="w-[1049px] h-[599px] flex  gap-[30px]">
                         <div className="w-[509px] h-[432px] pt-[60px] flex flex-col gap-[30px]">
