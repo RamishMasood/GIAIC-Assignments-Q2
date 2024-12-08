@@ -5,7 +5,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const navbar = () => {
   const images = [
-    "./bgheader.png",
+    "./onepic.jpg",
     "./shoppingpic.jpg",
     "./shoppinpic2.webp",
     "./shoppingpic3.webp", // Smaller image
