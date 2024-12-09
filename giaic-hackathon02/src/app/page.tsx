@@ -1,4 +1,4 @@
-// BY RAMISH MASOOD
+// Hackathon Template 5 BY RAMISH MASOOD
 
 import { IoIosArrowForward } from "react-icons/io";
 import { TfiAlarmClock } from "react-icons/tfi";
