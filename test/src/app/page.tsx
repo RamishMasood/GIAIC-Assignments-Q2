@@ -1,15 +1,20 @@
-import Destop1 from "./Componets/Destop1/page"
-import Card1 from "./Componets/ProductCard/card1"
-import Desktop1 from "./Componets/Desktop1/page"
-import Post from "./Componets/Destop1/FeaturedPost/page"
+import React from "react";
+import { fetchBlogs } from "@/sanity/lib/blogData";
+import Hero from "./components/hero";
+import Blogs from "./components/blogs";
+import IBlog from '@/sanity/lib/IBlog';
 
-export default function Home() {
+
+export default async function Home() {
+  const blogs: IBlog[] = await fetchBlogs();
+  const firstBlog = blogs[0];
+  const uniqueCategories: string[] = Array.from(
+    new Set(blogs.map((blog) => blog.category))
+  );
   return (
-    <div className="w-[1440px] justify-self-center"> 
-      <div><Destop1 /></div>
-      <div><Card1 /></div>
-      <div><Desktop1 /></div>
-      <div><Post /></div>
-    </div>
-  )
+    <>
+      <Hero blog={firstBlog}  />
+      <Blogs blogs={blogs} categories={uniqueCategories} />
+    </>
+  );
 }
